@@ -71,7 +71,6 @@ static void Function_Akkermana ()
 } //окончание метода Function_Akkermana (Задача 2)
 
 
-
 // рекурсивная функция заполняет массив рандомными числами от 1 до 99 (для задач 3 и 3.1)
 static int [] FillArray (int [] mas, int i) 
 {
@@ -96,8 +95,8 @@ static void PrintArrayFromEnd ()
          ReArray(array, h - 1);
       }
    }
-
-   Console.WriteLine("Введите размер массива: "); // основное тело программы
+   // основное тело метода (Задача 3)
+   Console.WriteLine("Введите размер массива: "); 
    int n = Convert.ToInt32(Console.ReadLine());
    if (n > 0)
    {
@@ -110,11 +109,13 @@ static void PrintArrayFromEnd ()
      ReArray(mass,h); //вызов рекурсивной функции, печатающей массив в обратном порядке
    }
    else Console.WriteLine("Число элементов массива должно быть больше нуля."); 
-} // окончание меода PrintArrayFromEnd (задача 3)
+} // окончание метода PrintArrayFromEnd (задача 3)
+
+
 
 //Задача 3.1
 //задать произвольный массив и ПЕРЕЗАПИСАТЬ элементы массива в обратном порядке
-static void PrintArrayFromEnd_1 ()
+static void FillArrayFromEnd ()
 {
 // рекурсивная функция перезаписывает элементы массива в обратном порядке
 // функция получает на вход какой-то массив и возвращает на выход массив с переставленными элементами
@@ -162,7 +163,7 @@ static void PrintArrayFromEnd_1 ()
   }
   }
   else Console.WriteLine("Число элементов массива не может быть отрицательным числом!");            
-} // окончание меода PrintArrayFromEnd_1 (задача 3.1)
+} // окончание метода FillArrayFromEnd (задача 3.1)
 
 
 //------------------------------------------------------------------------------------------------------
@@ -177,13 +178,12 @@ switch(nom)
   case 1: GetNatureNumbersFromInterval(); break; // вызов задачи 1
   case 2: Function_Akkermana(); break;           // вызов задачи 2
   case 3: PrintArrayFromEnd(); break;            // вызов задачи 3
-  case 4: PrintArrayFromEnd_1(); break;          // вызов задачи 3.1
+  case 4: FillArrayFromEnd(); break;             // вызов задачи 3.1
 }
 
 
-//PrintArrayFromEnd_1();
+//FillArrayFromEnd();
 //PrintArrayFromEnd();
 //GetNatureNumbersFromInterval();
 //Function_Akkermana ();
-
 
