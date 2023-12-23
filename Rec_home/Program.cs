@@ -14,7 +14,8 @@ void GetNatureNumbersFromInterval ()
      }
    }
  
-   Double N;  Double M;
+   Double N;  
+   Double M;
    Console.WriteLine("Введите промежуток [M,N], для которого нужно вывести натуральные числа");
    Console.WriteLine("M,N - могут быть дробными");
    Console.Write("Введите число M: "); 
@@ -182,8 +183,11 @@ switch(nom)
 }
 
 
-//FillArrayFromEnd();
-//PrintArrayFromEnd();
+
 //GetNatureNumbersFromInterval();
 //Function_Akkermana ();
+//FillArrayFromEnd();
+//PrintArrayFromEnd();
+
+
 
